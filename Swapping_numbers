@@ -1,0 +1,13 @@
+#include<stdio.h>
+void main()
+{
+ int a ,b;
+ printf("Enter two numbers separated by space ? ");
+ scanf("%d %d",&a,&b );
+ printf("\n Before swapping, the numbers are %d and %d",a,b);
+ b=a+b;//Adding both numbers and storing in anyone number
+ a=b-a;//Getting the 1st swapped number by subtracting original value of number(other number which isn't used for storing) from total sum
+ b=b-a;//Getting the 2nd swapped number by subtracting 1st swapped value from total sum
+ printf("\n After swapping, the numbers are %d and %d",a,b);
+
+}

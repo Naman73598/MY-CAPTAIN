@@ -1,0 +1,17 @@
+#include <stdio.h>
+int sums(int num);
+int main()
+{
+int num, sum;
+printf("input number ");
+scanf("%d", &num);
+sum = sums(num);
+printf("Sum of digits : %d", sum);
+return 0;
+}
+int sums(int num)
+{
+if(num == 0)
+return 0;
+return ((num % 10) + sums(num / 10));
+}

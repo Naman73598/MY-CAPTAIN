@@ -14,7 +14,7 @@ printf("Error in opening the file...\nExiting...");
 getch();
 return 0;
 }
-printf("\nThe original content is:\n\n");
+printf("\nThe original data is:\n\n");
 ch = getc(fp);
 while(ch != EOF)
 {
@@ -25,7 +25,7 @@ i++;
 ch = getc(fp);
 }
 printf("\n\n\n");
-printf("The content in reverse order is:\n\n");
+printf("The data in reverse order is:\n\n");
 for(j=(COUNT-1); j>=0; j--)
 {
 ch = newch[j];
